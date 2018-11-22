@@ -31,6 +31,8 @@ def can_be_created_in_a_block(args)
   Movie.create do |m|
     if m.title = nil 
       m.title = "Home Alone"
+    elsif m.release_date = nil
+    m.release_date = 1990
       
     m.release_date = 1990
   end
